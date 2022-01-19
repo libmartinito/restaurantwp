@@ -1,1 +1,3 @@
-alert("Hi guys");
+import {createHomePage} from "./home.js";
+
+createHomePage();
