@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-#content {
+#home-content {
   width: 100vw;
   height: 100vh;
   color: #f0ead6;
@@ -11,11 +11,11 @@
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("./burger.jpg");
+  url("./images/burger.jpg");
   background-size: cover;
 }
 
-.header {
+.home-header {
   width: 690px;
   height: 60px;
   display: flex;
@@ -23,19 +23,30 @@
   align-items: center;
 }
 
-.tab-container {
+.home-tab-container {
   display: flex;
   gap: 15px;
 }
 
-.logo {
+.tab-one:hover,
+.tab-two:hover,
+.tab-three:hover,
+.tab-one:focus,
+.tab-two:focus,
+.tab-three:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-logo {
   width: 30px;
   height: 30px;
-  background-image: url("./mcdonalds.png");
+  background-image: url("./images/mcdonalds.png");
   background-size: cover;
 }
 
-.hero {
+.home-hero {
   height: calc(100vh - 50px);
   width: 690px;
   display: flex;
@@ -43,10 +54,10 @@
   justify-content: center;
 }
 
-.line-one,
-.line-two {
+.home-line-one,
+.home-line-two {
   font-size: 72px;
 }
-.line-three {
+.home-line-three {
   padding-top: 30px;
 }

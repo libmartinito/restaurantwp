@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#menu-content {
+  width: 100vw;
+  height: 100vh;
+  color: #f0ead6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.menu-header {
+  width: 690px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-tab-container {
+  display: flex;
+  gap: 15px;
+}
+
+.tab-one:hover,
+.tab-two:hover,
+.tab-three:hover,
+.tab-one:focus,
+.tab-two:focus,
+.tab-three:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-logo {
+  width: 30px;
+  height: 30px;
+  background-image: url("./images/mcdonalds.png");
+  background-size: cover;
+}
+
+.menu-container {
+  display: flex;
+  width: 690px;
+  height: calc(100vh - 60px);
+}
+
+.menu {
+  flex: 1;
+}
+
+li {
+  list-style-type: none;
+  text-align: right;
+}
+
+li:hover,
+li:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.img-description {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 350px;
+  height: 350px;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
