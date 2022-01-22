@@ -1,4 +1,12 @@
 import "./menu-style.css";
+import quarterPounder from "../src/images/quarterPounder.jpeg";
+import mcChickenSandwich from "../src/images/mcChickenSandwich.jpeg";
+import mcCrispyChickenSandwich from "../src/images/mcCrispyChickenSandwich.jpeg";
+import bigMac from "../src/images/bigMac.jpeg";
+import burgerMcdo from "../src/images/burgerMcdo.jpeg";
+import cheeseburger from "../src/images/cheeseburger.jpeg";
+import cheeseburgerDeluxe from "../src/images/cheeseburgerDeluxe.jpeg";
+import cheesyBurgerMcdo from "../src/images/cheesyBurgerMcdo.jpeg";
 
 const createMenuPage = () => {
   let make = (elem) => {
@@ -98,56 +106,55 @@ listItems.forEach(listItem => {
 
 let updateImgDesc = function(target) {
   let textContent = target.textContent;
-  console.log(textContent);
   let img = document.querySelector(".img");
   let title = document.querySelector(".title");
   let desc = document.querySelector(".desc-body");
 
   switch(textContent) {
     case "Quarter Pounder":
-      img.style.backgroundImage = "url('../src/images/quarterPounder.jpeg')";
+      img.style.backgroundImage = `url(${quarterPounder})`;
       img.style.backgroundSize = "cover";
       title.textContent = "Quarter Pounder";
       desc.textContent = "Features a 1/4 lb. of 100% fresh beef seasoned with a pinch of salt and pepper, and topped with silvered onions, tangy pickles, and two slices of melty cheese on a sesame seed bun.";
       break;
     case "McChicken Sandwich":
-      img.style.backgroundImage = "url('../src/images/mcChickenSandwich.jpeg')";
+      img.style.backgroundImage = `url(${mcChickenSandwich})`;
       img.style.backgroundSize = "cover";
       title.textContent = "McChicken Sandwich";
       desc.textContent = "Served on a perfectly toasty bun, with crisply chicken fillet topped with mayonnaise and shredded iceberg lettuce.";
       break;
     case "McCrispy Chicken Sandwich":
-      img.style.backgroundImage = "url('../src/images/mcCrispyChickenSandwich.jpeg')";
+      img.style.backgroundImage = `url(${mcCrispyChickenSandwich})`;
       img.style.backgroundSize = "cover";
       title.textContent = "McCrispy Chicken Sandwich";
       desc.textContent = "Made of a juicy chicken patty topped with creamy mayo, sandwiched in a soft tasty bun.";
       break;
     case "Big Mac":
-      img.style.backgroundImage = "url('../src/images/bigMac.jpeg')";
+      img.style.backgroundImage = `url(${bigMac})`;
       img.style.backgroundSize = "cover";
       title.textContent = "Big Mac";
       desc.textContent = "A double layer of sear-sizzled, juicy 100% pure beef mingled with special sauce on a sesame seed bun and topped with melty American cheese, crisp lettuce, minced onions, and crisp dill pickles.";
       break;
     case "Burger McDo":
-      img.style.backgroundImage = "url('../src/images/burgerMcdo.jpeg')";
+      img.style.backgroundImage = `url(${burgerMcdo})`;
       img.style.backgroundSize = "cover";
       title.textContent = "Burger McDo";
       desc.textContent = "Our all-time classic burger made even better. Now with a beefier patty and a sweeter, tastier sauce.";
       break;
     case "Cheeseburger":
-      img.style.backgroundImage = "url('../src/images/cheeseburger.jpeg')";
+      img.style.backgroundImage = `url(${cheeseburger})`;
       img.style.backgroundSize = "cover";
       title.textContent = "Cheeseburger";
       desc.textContent = "100% pure beef patty seasoned with a pinch of salt and pepper, topped with a tangy pickle, chopped onions, ketchup, mustard, and a slice of melty American cheese on perfectly toasted buns.";
       break;
     case "Cheeseburger Deluxe":
-      img.style.backgroundImage = "url('../src/images/cheeseburgerDeluxe.jpeg')";
+      img.style.backgroundImage = `url(${cheeseburgerDeluxe})`;
       img.style.backgroundSize = "cover";
       title.textContent = "Cheeseburger Deluxe";
       desc.textContent = "It's the classic cheeseburger you love, made even more tasty with tomato, lettuce, and mayo for a deluxe kick, on perfectly toasty buns.";
       break;
     case "Cheesy Burger McDo":
-      img.style.backgroundImage = "url('../src/images/cheesyBurgerMcdo.jpeg')";
+      img.style.backgroundImage = `url(${cheesyBurgerMcdo})`;
       img.style.backgroundSize = "cover";
       title.textContent = "Cheesy Burger McDo";
       desc.textContent = "Classic savory Burger McDo plus a slice of creamy American cheese and sweet, tangy sauce.";
