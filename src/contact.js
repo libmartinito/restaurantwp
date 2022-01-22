@@ -48,22 +48,19 @@ const createContactPage = () => {
 
   let title = make("div");
   addClass(title, "contact-title");
+  title.textContent = "How can we help you?"
 
   let bodyOne = make("div");
   addClass(bodyOne, "contact-body-one");
-  bodyOne.textContent = "How can we help you?";
+  bodyOne.textContent = "Got a question, comment, or suggestion?";
 
   let bodyTwo = make("div");
   addClass(bodyTwo, "contact-body-two");
-  bodyTwo.textContent = "Got a question, comment, or suggestion?";
+  bodyTwo.textContent = "You can email us your concerns at writeus@ph.mcd.com";
 
   let bodyThree = make("div");
   addClass(bodyThree, "contact-body-three");
-  bodyThree.textContent = "You can email us your concerns at writeus@ph.mcd.com";
-
-  let bodyFour = make("div");
-  addClass(bodyFour, "contact-body-four");
-  bodyFour.textContent = "You can also reach us at our socials below.";
+  bodyThree.textContent = "You can also reach us at our socials below.";
 
   let socials = make("div");
   addClass(socials, "socials");
@@ -97,7 +94,6 @@ const createContactPage = () => {
   append(contactBody, bodyOne);
   append(contactBody, bodyTwo);
   append(contactBody, bodyThree);
-  append(contactBody, bodyFour);
   append(contactBody, socials);
 
   append(content, header);
