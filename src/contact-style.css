@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#contact-content {
+  width: 100vw;
+  height: 100vh;
+  color: #f0ead6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.contact-header {
+  width: 690px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-tab-container {
+  display: flex;
+  gap: 15px;
+}
+
+.tab-one:hover,
+.tab-two:hover,
+.tab-three:hover,
+.tab-one:focus,
+.tab-two:focus,
+.tab-three:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-logo {
+  width: 30px;
+  height: 30px;
+  background-image: url("../src/images/mcdonalds.png");
+  background-size: cover;
+}
+
+.contact-body {
+  width: 690px;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 36px;
+  padding-bottom: 15px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.fb {
+  background-image: url("../src/images/facebook.png");
+  background-size: cover;
+}
+
+.insta {
+  background-image: url("../src/images/instagram.png");
+  background-size: cover;
+}
+
+.twitter {
+  background-image: url("../src/images/twitter.png");
+  background-size: cover;
+}
+
+.fb,
+.insta,
+.twitter {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.socials {
+  padding-top: 30px;
+}
+
+.contact-body-one,
+.contact-body-two,
+.contact-body-three,
+.contact-body-four {
+  font-size: 18px;
+}
